@@ -22,7 +22,7 @@ This Web Application will help in finding tutors in your area
 1. Clone or Download This Repository
 2. Now checkout settings.py inside Project Findmytutor Folder
 3. Add Email Host Detail to it and add Django Secret Key
-4. To generate a secret key visit [Djecrety]("https://djecrety.ir/") and paste the secret key generated in settings.py
+4. To generate a secret key visit [Djecrety](https://djecrety.ir/) and paste the secret key generated in settings.py
 5. Now open the Project in Terminal, _Shortcut-tip_ for this you can go to folder path and write cmd and hit enter(works for windows)
 6. Now enter `python manage.py makemigrations`
 7. Then `python manage.py migrate`
