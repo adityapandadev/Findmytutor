@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<br>
+<h1 class="mytitle">Tutors details</h1>
+<hr>
+<p align="center">
+<img align="middle" class="myimg" height="320px" width="320px" src="/media/{{tutor.image }}"/>
+</p>
+
+
+<br>
+
+<div class="col-md-6 offset-md-3 mydet">
+
+
+
+<h2>Name: {{ tutor.name }}</h2>
+<h2>Subject : {{ tutor.subject }}</h2>
+<h2>Contact no. : {{ tutor.phone_no }}</h2>
+<h2>Adress : {{ tutor.adress }}</h2>
+<h2>Email_id : {{ tutor.email }}</h2>
+</div>
+<hr>
+<!--  <a href='/mytutor/tutor'>Back</a> -->
+<p align="center">
+<a class="btn btn-dark btn-sm btnback" href="/mytutor/tutor">Go Back</a>
+</p>
+<hr>
+{% endblock %}

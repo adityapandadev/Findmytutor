@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% block content %}
+<main class="p-5">
+  <h1 class="mytitle">Contact</h1>
+  <hr />
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Join FindMyTutor</h1>
+      <form action="/mytutor/contact/submit" method="post">
+        {% csrf_token %}
+        <input
+          class="form-control"
+          type="text"
+          name="uname"
+          placeholder="Name"
+        /><br />
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          placeholder="email"
+        /><br />
+        <input
+          class="form-control"
+          type="tel"
+          name="phone_no"
+          placeholder="phone_no"
+        /><br />
+        <textarea class="form-control" placeholder="MSG" name="msg"></textarea
+        ><br />
+        <input class="btn btn-dark btn-block" type="submit" /><br />
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <div class="embed-responsive embed-responsive-4by3">
+        <!-- <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14874.742904550822!2d81.6111144!3d21.2443074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ed6532a6f04f63c!2sEffCon+Technologies!5e0!3m2!1sen!2sin!4v1563194198556!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118983.74015069984!2d81.54886027347682!3d21.261891011052082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1624340686238!5m2!1sen!2sin"
+          franeborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>FindMyTutor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/vender/bs/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="/static/vender/jquery-3.3.1.min.js"></script>
+    <script src="/static/vender/popper.min.js"></script>
+    <script src="/static/vender/bs/js/bootstrap.min.js"></script>
+    <link href="/static/vender/fa/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/static/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-custom mynavbar">
+      <button
+        class="navbar-toggler d-lg-none bg-custom1"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand p-2" href="/mytutor/home">
+        <img
+          src="/static/images/tutorialmainlogo.png"
+          width="220"
+          height="48"
+        />
+      </a>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/mytutor/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytutor/tutor">GetTutor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytutor/question">Queries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/mytutor/contact">contact Us.</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% block content %} {% endblock %}
+    <footer class="bg-custom text-white text-center p-1 myfooter">
+      <p class="my-2">Copyright @ 2019, Made with ❤ by Aditya Panda</p>
+    </footer>
+  </body>
+</html>

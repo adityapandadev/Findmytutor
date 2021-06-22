@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<h1 class="mytitle">Question details</h1>
+
+<hr>
+
+<!-- <p><strong>Question :: </strong>{{ question.question }}</p>
+
+<p><strong>Date :: </strong>{{ question.cr_date }}</p>
+<p><strong>Answer :: </strong>{{ question.answer }}</p>
+<a href='/mytutor/question'>Back</a>
+ -->
+ 
+ 
+<div class="col-md-6 offset-md-3 mydet">
+<h2>Question: {{question.question }}</h2>
+<h2>Date : {{ question.cr_date }}</h2>
+<h2>Answer : {{ question.answer }}</h2>
+</div>
+<hr>
+<p align="center">
+<a class="btn btn-dark btn-sm btnback" href="/mytutor/question">Go Back</a>
+</p>
+<hr>
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br> 
+<br>
+<br>
+	
+
+
+
+
+
+
+
+{% endblock %}

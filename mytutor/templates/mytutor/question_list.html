@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<h1 class="mytitle">Queries</h1>
+<br>
+<p align="center">
+<img class="myimg" height="250px" width="250px" src="/static/images/quemark.jpg"/>
+</p>
+<hr>
+<p align="center">
+<a class="btn btn-dark btn-sm btnback" href="/mytutor/question/create">Ask Questions </a>
+</p>
+<hr>
+
+<br>
+
+
+
+<table class="table table-stripped table-bordered">
+  
+        <tr>
+            <th>Queries</th>
+            
+            
+            <th>Answered</th>
+            
+            <th>Read Answer</th>
+        </tr>
+    
+{% for n1 in question_list %}
+        <tr>
+            <td>{{n1.question}}</td>
+            
+            
+            <td> {% if n1.answer %}
+            <h1>Yes</h1>
+            {% else %}
+            <h1>No</h1>
+            {% endif %}    </td>
+            
+            <td><a class="btn btn-dark btn-sm btnback" href="/mytutor/question/{{n1.id}}">Read </a></td>
+        </tr>
+{% endfor %}
+</table>
+<hr>
+
+{% endblock %}
